@@ -1,0 +1,14 @@
+[{ "store": "Piggly Wiggly", "category": "fruit", "inventory": 10 },
+{ "store": "Whole Foods", "category": "vegetable", "inventory": 20 },
+{ "store": "Costco", "category": "fruit", "inventory": 15 },
+{ "store": "Piggly Wiggly", "category": "meat", "inventory": 25 },
+{ "store": "Whole Foods", "category": "vegetable", "inventory": 30 },
+{ "store": "Costco", "category": "fruit", "inventory": 10 },
+{ "store": "Piggly Wiggly", "category": "vegetable", "inventory": 20 },
+{ "store": "Whole Foods", "category": "fruit", "inventory": 15 },
+{ "store": "Costco", "category": "meat", "inventory": 25 },
+{ "store": "Piggly Wiggly", "category": "vegetable", "inventory": 30 },
+{ "store": "Whole Foods", "category": "fruit", "inventory": 10 },
+{ "store": "Piggly Wiggly", "category": "fruit", "inventory": 15 },
+{ "store": "Whole Foods", "category": "meat", "inventory": 25 }]
+

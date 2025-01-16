@@ -13,14 +13,16 @@
  *********/
 import VueApexCharts from 'vue3-apexcharts';
 import {ref} from "vue";
+import {useDataStore} from "@/stores/dataStore.js";
 
+const storeData = useDataStore();
 
 /*********
  Apex Chart Options
  *********/
 let chartOptions = ref({
   chart: {
-    id: 'CntyTypeCompliance',
+    id: 'grocerChart',
     type: 'bar',
     // height: 350,
     stacked: true,
@@ -59,7 +61,7 @@ let chartOptions = ref({
     }
   }],
   xaxis: {
-    categories: [[['All County'], ['Types']], "Metro", "Micro", "Rural"],
+    categories: storeData.chartDataTest[0], // ['All County Types', "Metro", "Micro"],
     tickPlacement: 'on',
     labels: {
       rotate: 0,
@@ -86,22 +88,18 @@ let chartOptions = ref({
     }
   }
 });
-// console.log(aryChartCompliance[3][0][1])
-
-// console.log(complianceStore.aryDashboardData)
-
 
 let chartSeries = ref([{
-  name: 'Compliant',
-  data: [10, 14, 10, 4],
+  name: 'Fruit',
+  data: storeData.chartDataTest[1][0], // [10, 14, 10],
   // color: "#003087"
 }, {
-  name: 'N/A (No Members)',
-  data: [10, 10, 4, 15],
+  name: 'Meat',
+  data: storeData.chartDataTest[1][2], // [10, 10, 4],
   // color: "#b3b3b3"
 }, {
-  name: 'Not Compliant',
-  data: [9, 10, 10, 7],
+  name: 'Vegetable',
+  data: storeData.chartDataTest[1][0], // [9, 7, 12],
   // color: "#ab2328"
 }]);
 
