@@ -8,7 +8,7 @@
     <v-btn 
     class="ma-3" 
     @click="storeData.chartData = updateData(grocerData, storeData.selectedRegion)">
-      Update
+      Update Chart
     </v-btn>
     <v-card class="w-75 mt-5">
       <StoreInventoryChart/>

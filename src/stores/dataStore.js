@@ -13,17 +13,6 @@ export const useDataStore = defineStore('data', () => {
         ]
     ]);
 
-    /*
-  let chartDataTest = ref([
-    ['Costco', 'Piggly Wiggly', 'Whole Foods'],
-    [
-        ['fruit', [10, 14, 7]],
-        ['meat', [13, 8, 4]],
-        ['vegetables', [9, 7, 12]]
-    ]
-  ]);
-    */
-
     return {
         selectedRegion,
         chartData

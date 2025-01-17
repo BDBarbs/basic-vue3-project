@@ -50,18 +50,6 @@ let chartOptions = ref({
       top: 5,
     },
   },
-  responsive: [
-    {
-      // breakpoint: 480,
-      options: {
-        legend: {
-          position: "bottom",
-          offsetX: -10,
-          offsetY: 0,
-        },
-      },
-    },
-  ],
   xaxis: {
     categories: storeData.chartData[0], // ['Fruit', "Meat", "Vegetables"],
     tickPlacement: "on",
@@ -93,19 +81,16 @@ let chartOptions = ref({
 
 let chartSeries = ref([
   {
-    name: storeData.chartData[1][0][0], // 'fruit',
-    data: storeData.chartData[1][0][1], // [10, 14, 10],
-    // color: "#003087"
+    name: 'fruit', // storeData.chartData[1][0][0],
+    data: [10, 14, 10], // storeData.chartData[1][0][1],
   },
   {
-    name: storeData.chartData[1][1][0], // 'meat',
-    data: storeData.chartData[1][1][1], // [10, 10, 4],
-    // color: "#b3b3b3"
+    name: 'meat', // storeData.chartData[1][1][0],
+    data: [10, 10, 4], // storeData.chartData[1][1][1],
   },
   {
-    name: storeData.chartData[1][2][0], // 'vegetable',
-    data: storeData.chartData[1][2][1], // [9, 7, 12],
-    // color: "#ab2328"
+    name: 'vegetable', // storeData.chartData[1][2][0],
+    data: [9, 7, 12], // storeData.chartData[1][2][1],
   },
 ]);
 
