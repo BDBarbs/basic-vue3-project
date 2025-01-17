@@ -61,7 +61,7 @@ let chartOptions = ref({
     }
   }],
   xaxis: {
-    categories: storeData.chartDataTest[0], // ['All County Types', "Metro", "Micro"],
+    categories: storeData.chartData[0], // ['Fruit', "Meat", "Vegetables"], 
     tickPlacement: 'on',
     labels: {
       rotate: 0,
@@ -90,15 +90,15 @@ let chartOptions = ref({
 });
 
 let chartSeries = ref([{
-  name: 'Fruit',
+  name: storeData.chartData[1][0][0], // 'fruit',
   data: storeData.chartDataTest[1][0], // [10, 14, 10],
   // color: "#003087"
 }, {
-  name: 'Meat',
+  name: storeData.chartData[1][1][0], // 'meat',
   data: storeData.chartDataTest[1][2], // [10, 10, 4],
   // color: "#b3b3b3"
 }, {
-  name: 'Vegetable',
+  name: storeData.chartData[1][2][0], // 'vegetable',
   data: storeData.chartDataTest[1][0], // [9, 7, 12],
   // color: "#ab2328"
 }]);
