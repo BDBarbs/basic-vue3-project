@@ -26,19 +26,19 @@ const storeData = useDataStore();
 
 function updateData(data, selectedRegion) {
     // Filter data by selected state 
-    const selStateData = data.filter(item => item.state === selectedRegion);
+    const selRegionData = data.filter(item => item.state === selectedRegion);
 
     // Extract and sort store names
-    const stores = [...new Set(selStateData.map(item => item.store))].sort();
+    const stores = [...new Set(selRegionData.map(item => item.store))].sort();
 
     // Extract and sort category values
-    const categories = [...new Set(selStateData.map(item => item.category))].sort();
+    const categories = [...new Set(selRegionData.map(item => item.category))].sort();
 
     // Initialize the result array for categorized data
     const categorizedData = categories.map(category => [category, Array(stores.length).fill(0)]);
 
     // Populate the categorized data
-    selStateData.forEach(item => {
+    selRegionData.forEach(item => {
         const storeIndex = stores.indexOf(item.store);
         const categoryIndex = categories.indexOf(item.category);
         categorizedData[categoryIndex][1][storeIndex] += item.inventory;
