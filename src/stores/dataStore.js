@@ -3,25 +3,30 @@ import {defineStore} from 'pinia'
 
 export const useDataStore = defineStore('data', () => {
 
-    let selectedState = ref(null)
+    let selectedRegion = ref('No Region Selected');
     let chartData = ref([
         [],
-        []
+        [
+          [[], []],
+          [[], []],
+          [[], []]
+        ]
     ]);
 
+    /*
   let chartDataTest = ref([
     ['Costco', 'Piggly Wiggly', 'Whole Foods'],
     [
-        [10, 14, 10],
-        [10, 10, 4],
-        [9, 7, 12]
+        ['fruit', [10, 14, 7]],
+        ['meat', [13, 8, 4]],
+        ['vegetables', [9, 7, 12]]
     ]
   ]);
-
+    */
 
     return {
-        selectedState,
-        chartData,
-        chartDataTest
-    }
+        selectedRegion,
+        chartData
+        //chartDataTest  
+      }
 })

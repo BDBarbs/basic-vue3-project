@@ -1,32 +1,32 @@
 <template>
   <div class="w-100">
-    <p>Select a state: </p>
-    <v-btn class="ma-3" @click="storeData.selectedState = 'Wisconsin'">Wisconsin</v-btn>
-    <v-btn class="ma-3" @click="storeData.selectedState = 'Ohio'">Ohio</v-btn>
-    <p class="mt-5">Update Chart:</p>
+    <p>Select a region: </p>
+    <v-btn class="ma-3" @click="storeData.selectedRegion = 'East'">East</v-btn>
+    <v-btn class="ma-3" @click="storeData.selectedRegion = 'Midwest'">Midwest</v-btn>
+    <p>Selected Region: {{ storeData.selectedRegion }}</p>
+    <p class="mt-5">After selecting a region above, click "Update Chart" below:</p>
     <v-btn 
     class="ma-3" 
-    @click="storeData.chartData = processData(grocerData, storeData.selectedState)"
-    >
+    @click="storeData.chartData = updateData(grocerData, storeData.selectedRegion)">
       Update
     </v-btn>
     <v-card class="w-75 mt-5">
-      <ChartCntyTypeComp/>
+      <StoreInventoryChart/>
     </v-card>
   </div>
 
 </template>
 
 <script setup>
-import ChartCntyTypeComp from "@/components/storeInventoryChart.vue";
 import {useDataStore} from "@/stores/dataStore.js";
+import StoreInventoryChart from "@/components/storeInventoryChart.vue";
 import grocerData from "./models/sample-api-data.json";
 
 const storeData = useDataStore();
 
-function processData(data, selectedState) {
+function updateData(data, selectedRegion) {
     // Filter data by selected state 
-    const selStateData = data.filter(item => item.state === selectedState);
+    const selStateData = data.filter(item => item.state === selectedRegion);
 
     // Extract and sort store names
     const stores = [...new Set(selStateData.map(item => item.store))].sort();
