@@ -14,7 +14,7 @@ import { useDataStore } from "@/stores/dataStore.js";
 const storeData = useDataStore();
 
 /*********
- Apex Chart Options
+ Apex Chart
  *********/
 let chartOptions = ref({
   chart: {
@@ -81,16 +81,16 @@ let chartOptions = ref({
 
 let chartSeries = ref([
   {
-    name: 'fruit', // storeData.chartData[1][0][0],
-    data: [10, 14, 10], // storeData.chartData[1][0][1],
+    name: storeData.chartData[1][0][0], // 'fruit',  
+    data: storeData.chartData[1][0][1], // [10, 14, 10], 
   },
   {
-    name: 'meat', // storeData.chartData[1][1][0],
-    data: [10, 10, 4], // storeData.chartData[1][1][1],
+    name: storeData.chartData[1][1][0], // 'meat', 
+    data: storeData.chartData[1][1][1], // [10, 10, 4],
   },
   {
-    name: 'vegetable', // storeData.chartData[1][2][0],
-    data: [9, 7, 12], // storeData.chartData[1][2][1],
+    name: storeData.chartData[1][2][0], // 'vegetable',
+    data: storeData.chartData[1][2][1], // [9, 7, 12],
   },
 ]);
 
