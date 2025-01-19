@@ -1,5 +1,10 @@
 <template>
-  <VueApexCharts type="bar" height="360px" :options="chartOptions" :series="chartSeries">
+  <VueApexCharts
+    type="bar"
+    height="360px"
+    :options="chartOptions"
+    :series="chartSeries"
+  >
   </VueApexCharts>
 </template>
 
@@ -8,7 +13,7 @@
  Imports
  *********/
 import VueApexCharts from "vue3-apexcharts";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useDataStore } from "@/stores/dataStore.js";
 
 const storeData = useDataStore();
@@ -16,11 +21,10 @@ const storeData = useDataStore();
 /*********
  Apex Chart
  *********/
-let chartOptions = ref({
+let chartOptions = computed(() => ({
   chart: {
     id: "grocerChart",
     type: "bar",
-    // height: 350,
     stacked: true,
     stackType: "100%",
     toolbar: {
@@ -77,22 +81,24 @@ let chartOptions = ref({
       fontSize: "24px",
     },
   },
-});
+}));
 
-let chartSeries = ref([
-  {
-    name: storeData.chartData[1][0][0], // 'fruit',  
-    data: storeData.chartData[1][0][1], // [10, 14, 10], 
-  },
-  {
-    name: storeData.chartData[1][1][0], // 'meat', 
-    data: storeData.chartData[1][1][1], // [10, 10, 4],
-  },
-  {
-    name: storeData.chartData[1][2][0], // 'vegetable',
-    data: storeData.chartData[1][2][1], // [9, 7, 12],
-  },
+
+let chartSeries = computed(() => [
+    {
+      name: storeData?.chartData?.[1]?.[0]?.[0], // 'fruit',
+      data: storeData?.chartData?.[1]?.[0]?.[1], // [10, 14, 10],
+    },
+    {
+      name: storeData?.chartData?.[1]?.[1]?.[0], // 'meat',
+      data: storeData?.chartData?.[1]?.[1]?.[1], // [10, 10, 4],
+    },
+    {
+      name: storeData?.chartData?.[1]?.[2]?.[0], // 'vegetable',
+      data: storeData?.chartData?.[1]?.[2]?.[1], // [9, 7, 12],
+    },
 ]);
+
 
 // console.log(storeData.chartDataTest[1][0][1])
 </script>

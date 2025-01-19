@@ -4,6 +4,9 @@ import {defineStore} from 'pinia'
 export const useDataStore = defineStore('data', () => {
 
     let selectedRegion = ref('No Region Selected');
+    // let chartData = ref(undefined)
+    
+// /*
     let chartData = ref([
         [],
         [
@@ -12,6 +15,8 @@ export const useDataStore = defineStore('data', () => {
           [[], []]
         ]
     ]);
+// */
+    
 
     return {
         selectedRegion,
