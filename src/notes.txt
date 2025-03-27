@@ -1,0 +1,52 @@
+<template>
+  <v-container>
+    <v-data-table
+      :headers="headers"
+      :items="tableData"
+      class="elevation-1"
+    >
+      <template v-slot:top>
+        <v-toolbar flat>
+          <v-toolbar-title>GeoJSON Data</v-toolbar-title>
+          <v-spacer></v-spacer>
+        </v-toolbar>
+      </template>
+    </v-data-table>
+  </v-container>
+</template>
+
+<script setup>
+import geojsonData from "@/public/sample_sf_data_schema_multi.geojson";
+
+// Define table headers
+const headers = [
+  { text: "ID", value: "ID" },
+  { text: "Period", value: "PERIOD" },
+  { text: "Benefit Program", value: "BENEFIT_PROGRM" },
+  { text: "Subprogram", value: "BENEFIT_SBPRGRM" },
+  { text: "In Program Network", value: "IN_PROGRAM_NETWORK" },
+  { text: "MCO/DMO Name", value: "MCO_DMO_NM" },
+  { text: "Provider Supertype", value: "PROV_SUPERTYPE" },
+  { text: "Coordinates", value: "coordinates" },
+];
+
+// Process GeoJSON data
+const tableData = geojsonData.flatMap((collection) =>
+  collection.features.map((feature) => ({
+    ID: feature.properties.ID,
+    PERIOD: feature.properties.PERIOD,
+    BENEFIT_PROGRM: feature.properties.BENEFIT_PROGRM,
+    BENEFIT_SBPRGRM: feature.properties.BENEFIT_SBPRGRM,
+    IN_PROGRAM_NETWORK: feature.properties.IN_PROGRAM_NETWORK,
+    MCO_DMO_NM: feature.properties.MCO_DMO_NM,
+    PROV_SUPERTYPE: feature.properties.PROV_SUPERTYPE,
+    coordinates: feature.geometry.coordinates.join(", "),
+  }))
+);
+</script>
+
+<style scoped>
+.v-data-table {
+  margin-top: 20px;
+}
+</style>
