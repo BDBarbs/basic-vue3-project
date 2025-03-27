@@ -1,0 +1,165 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-97.7431, 30.2672]
+            },
+            "properties": {
+                "NAME": "Austin",
+                "BENEFIT_PROGRM": "Lone Star Laughs",
+                "BENEFIT_SBPRGRM": "Subprogram Chuckles",
+                "IN_PROGRAM_NETWORK": 1,
+                "MCO_DMO_NM": "MCO Giggles",
+                "ID": 1234567,
+                "PROV_SUPERTYPE": "Type Haha"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-96.7969, 32.7767]
+            },
+            "properties": {
+                "NAME": "Dallas",
+                "BENEFIT_PROGRM": "Big D Belly Laughs",
+                "BENEFIT_SBPRGRM": "Subprogram Snickers",
+                "IN_PROGRAM_NETWORK": 0,
+                "MCO_DMO_NM": "MCO Chuckles",
+                "ID": 2345678,
+                "PROV_SUPERTYPE": "Type LOL"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-95.3698, 29.7604]
+            },
+            "properties": {
+                "NAME": "Houston",
+                "BENEFIT_PROGRM": "Space City Smiles",
+                "BENEFIT_SBPRGRM": "Subprogram Giggles",
+                "IN_PROGRAM_NETWORK": 1,
+                "MCO_DMO_NM": "MCO Haha",
+                "ID": 3456789,
+                "PROV_SUPERTYPE": "Type ROFL"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-98.4936, 29.4241]
+            },
+            "properties": {
+                "NAME": "San Antonio",
+                "BENEFIT_PROGRM": "Alamo Amusement",
+                "BENEFIT_SBPRGRM": "Subprogram Grins",
+                "IN_PROGRAM_NETWORK": 0,
+                "MCO_DMO_NM": "MCO Smiles",
+                "ID": 4567890,
+                "PROV_SUPERTYPE": "Type Snort"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-97.3964, 27.8006]
+            },
+            "properties": {
+                "NAME": "Corpus Christi",
+                "BENEFIT_PROGRM": "Coastal Cackles",
+                "BENEFIT_SBPRGRM": "Subprogram Chuckles",
+                "IN_PROGRAM_NETWORK": 1,
+                "MCO_DMO_NM": "MCO ROFL",
+                "ID": 5678901,
+                "PROV_SUPERTYPE": "Type Teehee"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-101.8313, 35.221]
+            },
+            "properties": {
+                "NAME": "Amarillo",
+                "BENEFIT_PROGRM": "Panhandle Puns",
+                "BENEFIT_SBPRGRM": "Subprogram LOL",
+                "IN_PROGRAM_NETWORK": 0,
+                "MCO_DMO_NM": "MCO Snickers",
+                "ID": 6789012,
+                "PROV_SUPERTYPE": "Type Giggle"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-100.496, 31.4638]
+            },
+            "properties": {
+                "NAME": "San Angelo",
+                "BENEFIT_PROGRM": "West Texas Wit",
+                "BENEFIT_SBPRGRM": "Subprogram Grins",
+                "IN_PROGRAM_NETWORK": 1,
+                "MCO_DMO_NM": "MCO Teehee",
+                "ID": 7890123,
+                "PROV_SUPERTYPE": "Type Haha"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-97.0586, 33.2148]
+            },
+            "properties": {
+                "NAME": "Denton",
+                "BENEFIT_PROGRM": "North Texas Nonsense",
+                "BENEFIT_SBPRGRM": "Subprogram Snickers",
+                "IN_PROGRAM_NETWORK": 0,
+                "MCO_DMO_NM": "MCO Grins",
+                "ID": 8901234,
+                "PROV_SUPERTYPE": "Type ROFL"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-102.0779, 31.8457]
+            },
+            "properties": {
+                "NAME": "Odessa",
+                "BENEFIT_PROGRM": "Oilfield Oddities",
+                "BENEFIT_SBPRGRM": "Subprogram Chuckles",
+                "IN_PROGRAM_NETWORK": 1,
+                "MCO_DMO_NM": "MCO LOL",
+                "ID": 9012345,
+                "PROV_SUPERTYPE": "Type Snort"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-94.7977, 32.5007]
+            },
+            "properties": {
+                "NAME": "Longview",
+                "BENEFIT_PROGRM": "Piney Woods Puns",
+                "BENEFIT_SBPRGRM": "Subprogram Giggles",
+                "IN_PROGRAM_NETWORK": 0,
+                "MCO_DMO_NM": "MCO Haha",
+                "ID": 1234560,
+                "PROV_SUPERTYPE": "Type Teehee"
+            }
+        }
+    ]
+}
