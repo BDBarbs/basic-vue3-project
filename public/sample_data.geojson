@@ -27,7 +27,7 @@
                 "NAME": "Dallas",
                 "BENEFIT_PROGRM": "Big D Belly Laughs",
                 "BENEFIT_SBPRGRM": "Subprogram Snickers",
-                "IN_PROGRAM_NETWORK": 0,
+                "IN_PROGRAM_NETWORK": 1,
                 "MCO_DMO_NM": "MCO Chuckles",
                 "ID": 2345678,
                 "PROV_SUPERTYPE": "Type LOL"
@@ -59,7 +59,7 @@
                 "NAME": "San Antonio",
                 "BENEFIT_PROGRM": "Alamo Amusement",
                 "BENEFIT_SBPRGRM": "Subprogram Grins",
-                "IN_PROGRAM_NETWORK": 0,
+                "IN_PROGRAM_NETWORK": 1,
                 "MCO_DMO_NM": "MCO Smiles",
                 "ID": 4567890,
                 "PROV_SUPERTYPE": "Type Snort"
@@ -91,7 +91,7 @@
                 "NAME": "Amarillo",
                 "BENEFIT_PROGRM": "Panhandle Puns",
                 "BENEFIT_SBPRGRM": "Subprogram LOL",
-                "IN_PROGRAM_NETWORK": 0,
+                "IN_PROGRAM_NETWORK": 1,
                 "MCO_DMO_NM": "MCO Snickers",
                 "ID": 6789012,
                 "PROV_SUPERTYPE": "Type Giggle"
@@ -123,7 +123,7 @@
                 "NAME": "Denton",
                 "BENEFIT_PROGRM": "North Texas Nonsense",
                 "BENEFIT_SBPRGRM": "Subprogram Snickers",
-                "IN_PROGRAM_NETWORK": 0,
+                "IN_PROGRAM_NETWORK": 1,
                 "MCO_DMO_NM": "MCO Grins",
                 "ID": 8901234,
                 "PROV_SUPERTYPE": "Type ROFL"
@@ -155,7 +155,7 @@
                 "NAME": "Longview",
                 "BENEFIT_PROGRM": "Piney Woods Puns",
                 "BENEFIT_SBPRGRM": "Subprogram Giggles",
-                "IN_PROGRAM_NETWORK": 0,
+                "IN_PROGRAM_NETWORK": 1,
                 "MCO_DMO_NM": "MCO Haha",
                 "ID": 1234560,
                 "PROV_SUPERTYPE": "Type Teehee"
